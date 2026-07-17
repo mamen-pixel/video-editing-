@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ቪዲዮ ኤዲቲንግ ፖርትፎሊዮ</title>
+    
+    <!-- 🌐 ይሄ ሊንክ ትክክለኛዎቹን የቴሌግራም እና ዩቲዩብ አይከኖች ያመጣልናል -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* የዌብሳይቱ አጠቃላይ ገጽታ (Theme) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212; /* ጥቁር ዳራ */
-            color: #ffffff; /* ነጭ ጽሑፍ */
+            background-color: #0f0f12; 
+            color: #ffffff; 
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,61 +23,94 @@
             text-align: center;
         }
 
-        /* ዋናው የይዘት ሳጥን */
         .container {
-            max-width: 800px;
+            max-width: 650px;
+            width: 90%;
             padding: 40px 20px;
-            background: #1e1e1e; /* ጥቁር ሳምባኖ ሳጥን */
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border-top: 5px solid #ff4757; /* ቀይ መስመር ለቪዲዮ ኤዲቲንግ ስሜት */
+            background: #18181c; 
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+            border-top: 6px solid #ff4757; 
         }
 
-        /* አርዕስቶች */
         h1 {
-            color: #ff4757; /* ቀይ ቀለም */
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            color: #ff4757; 
+            font-size: 2.2rem;
+            margin-bottom: 5px;
         }
 
         h2 {
-            color: #ffa502; /* ብርቱካናማ ቀለም */
-            margin-top: 40px;
-            font-size: 1.8rem;
+            color: #ffa502; 
+            margin-top: 35px;
+            font-size: 1.6rem;
         }
 
         p {
-            font-size: 1.2rem;
-            color: #ced6e0;
+            font-size: 1.1rem;
+            color: #a4b0be;
             line-height: 1.6;
         }
 
-        /* የአገልግሎቶች ዝርዝር */
         ul {
             list-style: none;
             padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             align-items: center;
+            margin-top: 20px;
         }
 
         li {
-            background: #2f3542;
-            padding: 15px 25px;
-            border-radius: 8px;
-            width: 80%;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: transform 0.3s ease;
+            background: #23232a;
+            padding: 14px 20px;
+            border-radius: 10px;
+            width: 85%;
+            font-size: 1.05rem;
+            border-left: 4px solid #ff4757;
         }
 
-        /* ማውዙን ሲያስጠጉበት የሚኖረው እንቅስቃሴ */
-        li:hover {
-            transform: scale(1.05);
-            background: #ff4757;
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
             color: white;
-            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px; /* በአይከኑ እና በጽሑፉ መካከል ያለው ርቀት */
+            transition: all 0.3s ease;
+        }
+
+        .btn i {
+            font-size: 1.3rem; /* የአይከኑ መጠን */
+        }
+
+        .btn-telegram {
+            background-color: #0088cc;
+        }
+        .btn-telegram:hover {
+            background-color: #00a2f2;
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-youtube {
+            background-color: #ff0000;
+        }
+        .btn-youtube:hover {
+            background-color: #ff3333;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -84,14 +120,27 @@
         <h1>ሰላም! እኔ ፕሮፌሽናል ቪዲዮ ኤዲተር ነኝ</h1>
         <p>ማራኪ እና ጥራት ያላቸውን ቪዲዮዎች እሰራለሁ።</p>
         
-        <hr style="border: 0; height: 1px; background: #333; margin: 30px 0;">
+        <hr style="border: 0; height: 1px; background: #2d2d35; margin: 25px 0;">
 
-        <h2>የምንሰጣቸው አገልገሎቶች </h2>
+        <h2>የምሰጣቸው አገልግሎቶች</h2>
         <ul>
             <li>📺 YouTube and TikTok Video Editing</li>
             <li>📢 የሶሻል ሚዲያ ማስታወቂያዎች</li>
             <li>🎨 የቀለም እርማት (Color Grading)</li>
         </ul>
+
+        <hr style="border: 0; height: 1px; background: #2d2d35; margin: 30px 0;">
+
+        <h2>እኔን ለማግኘት</h2>
+        <div class="social-buttons">
+            <!-- ✈️ እውነተኛው የቴሌግራም አይከን እዚህ ጋር ተጨምሯል -->
+            <a href="https://t.me/your_username" target="_blank" class="btn btn-telegram">
+                <i class="fab fa-telegram-plane"></i> Telegram ያግኙኝ
+            </a>
+            
+            <!-- 🔴 እውነተኛው የዩቲዩብ አይከን እዚህ ጋር ተጨምሯል -->
+            <a href="https://youtube.com/@your_channel" target="_blank" class="btn btn-youtube">
+                <i class="fab fa-youtube"></i> YouTube ቻናሌ
+            </a>
+        </div>
     </div>
-</body>
-</html>
